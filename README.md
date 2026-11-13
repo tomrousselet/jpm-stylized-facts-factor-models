@@ -13,13 +13,13 @@ The complete analysis, with all code, tables and figures, is in [`JPM_financial_
 
 | Stylized fact | Verdict | Main evidence |
 |---|---|---|
-| Stationarity of returns | ✅ Mean and autocovariance; variance compatible | Block homogeneity test: p = 0.90 (mean), p = 0.25 (autocovariance). The variance test rejects (Q/df = 8.8) because of volatility clustering, but GARCH persistence is below 1 |
-| Negative skewness | ⚠️ Weekly to monthly horizons only | Daily skewness of −0.11 becomes +0.17 once the October 1987 crash is removed; −0.34 at 5 days and −0.53 at 21 days |
-| Heavy tails | ✅ Strong | Daily kurtosis 18.3; tail index 2.5–3.0 (Hill) and Student-t ν̂ = 2.8 (maximum likelihood) |
-| Aggregational Gaussianity | ✅ As a tendency | Kurtosis falls from 18.3 (daily) to 4.9 (annual), JB/N from 9.74 to 0.31; normality still rejected at one year |
-| No linear autocorrelation | ✅ Daily and weekly, after correcting for heteroskedasticity | Ljung-Box rejects, but the White-robust F-test does not (p = 0.43 daily, 0.46 weekly) |
-| Volatility clustering | ✅ Strong | ARCH-LM = 1,581 (25 lags); GARCH(1,1) persistence 0.993, half-life of a shock 93 trading days |
-| Leverage effect | ⚠️ Right sign; borderline for JPM alone, clear at market level | 9 of 10 lagged coefficients negative, robust F-test p = 0.047 to 0.091; the VIX reacts 1.8× more to JPM falls than to JPM rises |
+| Stationarity of returns |  Mean and autocovariance; variance compatible | Block homogeneity test: p = 0.90 (mean), p = 0.25 (autocovariance). The variance test rejects (Q/df = 8.8) because of volatility clustering, but GARCH persistence is below 1 |
+| Negative skewness |  Weekly to monthly horizons only | Daily skewness of −0.11 becomes +0.17 once the October 1987 crash is removed; −0.34 at 5 days and −0.53 at 21 days |
+| Heavy tails |  Strong | Daily kurtosis 18.3; tail index 2.5–3.0 (Hill) and Student-t ν̂ = 2.8 (maximum likelihood) |
+| Aggregational Gaussianity |  As a tendency | Kurtosis falls from 18.3 (daily) to 4.9 (annual), JB/N from 9.74 to 0.31; normality still rejected at one year |
+| No linear autocorrelation |  Daily and weekly, after correcting for heteroskedasticity | Ljung-Box rejects, but the White-robust F-test does not (p = 0.43 daily, 0.46 weekly) |
+| Volatility clustering |  Strong | ARCH-LM = 1,581 (25 lags); GARCH(1,1) persistence 0.993, half-life of a shock 93 trading days |
+| Leverage effect |  Right sign; borderline for JPM alone, clear at market level | 9 of 10 lagged coefficients negative, robust F-test p = 0.047 to 0.091; the VIX reacts 1.8× more to JPM falls than to JPM rises |
 
 | Factor model | Result |
 |---|---|
